@@ -1,0 +1,12 @@
+body {
+    background: #e83030;
+}
+
+.law {
+    background: #fff;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+}
