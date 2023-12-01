@@ -1,1 +1,3 @@
-const question = document.querySelector("#answer-choice")
+const questionItems = [
+    
+]
