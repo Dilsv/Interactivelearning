@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Vina+Sans&display=swap');
 
 body {
     background-image: url("../images/back-p.png");
@@ -7,7 +7,7 @@ body {
 /* Header starts here*/
 .main-header {
     font-size: 80px;
-    font-family: "Roboto, Sans-Serif";
+    font-family: "Vina+Sands, Sans-Serif";
     text-align: center;
     width: 90%;
     max-width: 600px;
@@ -25,10 +25,15 @@ body {
     max-width: 600px;
     margin: 100px auto 0;
     border-radius: 10px;
-    padding: 20px;
 }
 
 #box {
     background-color: aqua;
-    
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
 }
+
+/*Quiz page starts here*/
