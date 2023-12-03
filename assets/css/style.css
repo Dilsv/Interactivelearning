@@ -1,12 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
 body {
     background-image: url("../images/back-p.png");
 }
 
-#law {
-    background: #fff;
+/* Header starts here*/
+.main-header {
+    font-size: 80px;
+    font-family: "Roboto, Sans-Serif";
+    text-align: center;
     width: 90%;
     max-width: 600px;
     margin: 100px auto 0;
     border-radius: 10px;
-    padding: 30px;
+    padding: 10px;
+}
+
+/* Main page starts here*/
+#container {
+    font-size: 25px;
+    font-family: "Roboto, Sans-Serif";
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#box {
+    background-color: aqua;
+    
 }
