@@ -2,7 +2,7 @@
 
 ![](assets/readme-files/amiresponsive.png)
 
-[View the website here]
+[View the website here] https://dilsv.github.io/Interactivelearning/
 
 
 ## Introduction 
