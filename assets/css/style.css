@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Vina+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Acme&display=swap');
 
 body {
     background-image: url("../images/back-p.png");
@@ -7,7 +7,8 @@ body {
 /* Header starts here*/
 .main-header {
     font-size: 80px;
-    font-family: "Vina+Sands, Sans-Serif";
+    font-family: "Abel", sans-serif;
+    color: #4ab025;
     text-align: center;
     width: 90%;
     max-width: 600px;
@@ -19,8 +20,9 @@ body {
 /* Main page starts here*/
 #container {
     font-size: 25px;
-    font-family: "Roboto, Sans-Serif";
+    font-family: "Abel", sans-serif;
     text-align: center;
+    opacity: 0.6;
     width: 90%;
     max-width: 600px;
     margin: 100px auto 0;
@@ -28,7 +30,7 @@ body {
 }
 
 #box {
-    background-color: aqua;
+    background-color: #ffffff;
     width: 90%;
     max-width: 600px;
     margin: 100px auto 0;
@@ -36,4 +38,21 @@ body {
     padding: 30px;
 }
 
-/*Quiz page starts here*/
+/*Highscore and play again button*/
+
+#high-score {
+    background-color: #4ab025;
+    font-family: "Acme", sans-serif;
+}
+
+#play-cmt {
+    background-color: #4ab025;
+    font-family: "Acme", sans-serif;
+
+}
+
+#text {
+    text-align: center;
+    font-family: "Acme", sans-serif;
+    color: #4ab025;
+}
