@@ -108,3 +108,10 @@ const questionItems = [
         ],
       },
 ]
+
+let questionNumber;
+let questionElement = document.getElementById("question");
+let letsBegin = document.getElementById("begin");
+let highScore = document.getElementById("high-score");
+let playAgain = document.getElementById("play-cmt");
+let shuffledQuestions = questionBank.sort(() => Math.random() - .5);
