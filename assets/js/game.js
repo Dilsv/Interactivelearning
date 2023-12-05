@@ -115,3 +115,23 @@ let letsBegin = document.getElementById("begin");
 let highScore = document.getElementById("high-score");
 let playAgain = document.getElementById("play-cmt");
 let shuffledQuestions = questionBank.sort(() => Math.random() - .5);
+
+// Function to start quiz or play again
+function startGame() {
+  questionNumber = 0;
+  oldScore = 0;
+  document.getElementById("high-score").style.display = "block";
+  shuffleQuestionBank();
+}
+
+// Function to shuffle questions at the beginning of each game
+
+
+// function to limit the quiz to 10 questions and then show score
+function nextQuestion () {
+  if (questionNumber < 10) {
+  showQuestion();
+} else {
+  showScore();
+}}
+
