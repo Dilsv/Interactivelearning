@@ -7,22 +7,22 @@
 
 ## Introduction 
 
-This website has been produced to provide a platform for a fun and educational game designed for ages 16+. It offers questions in a quiz format to test the user's general knowledge.
+This website has been produced to provide a platform for a fun and interactional game designed for ages 11+. It offers a quiz method to test the users response time.
 
 In addition to the home page this website also features:
 - The 'Quiz' page
 - A 'Instructions section'
-- A 'High Scores' page
+- A 'High Scores' page -----------
 
 The business goals of the website is:
-1. To provide an educational learning platform for people aged 16+.
-2. To provide engaging content so that users enjoy using this quiz.
-3. To create an easy to navigate website to ensure that it is user friendly.
+1. To provide an interactional and enjoyable game designed for ages 11 and above.
+2. To provide content that is fun and interactional whilst playing the quiz.
+3. To create a website that is easy to navigate with simple instructions to play the game.
 
 The user goals of this website is:
-1. To gain general knowledge.
-2. To test my general knowledge using the quiz.
-3. To improve my previous scores & therefore my overall knowledge.
+1. To engage and allow the user to use common knowledge when using the website.
+2. To create an educational platform for all ages.
+3. To improve previous scores & overall knowledge.
 
 --- 
 ## UX
@@ -30,44 +30,44 @@ The user goals of this website is:
 ### Strategy
 Using the core UX principles I first started with Strategy, thinking about the target audience for this quiz & the features they would want.
 
-The target audience for 'Pub Quiz' are:
-- People aged 16+
-- People who are interested in Pub Quizzes.
-- People who want to improve their general knowledge. 
+The target audience for 'Matches' are:
+- People aged 11+
+- People who are interested in problem-solving.
+- People who want to improve test their good sense. 
 
 Features that they would need to be included:
 - A fun & interactive quiz
-- The ability to track their high scores so they can see if they're improving
+- The ability to track their high scores so they can see if they're improving 
 
-It was imperative to me that this website was simple & easy to use to ensure that the users had an enjoyable experience; therefore each page has a limited amount of information, written in simple language. 
+It was important to me that this website was simple, easy to navigate and use to to ensure all users had an enjoyable experience hence, each page was designed with minimal information and naviation using simple language.
 
-The website has been designed to work well on desktops & tablets as well, to ensure that no matter the device the user has a positive user experience.
+The website has been designed to work well on desktops, tablets and mobile, to ensure that no matter the device the user has a positive user experience.
 
 ### Scope
 To achieve the desired user and business goals this website will include the following:
 1. A landing page with:
-- A `H1` animated heading
-- An animated picture
-- An instructions `ul`
+- A `H1` heading
+- An instructions 'div`
 - Start game button
 - A High Scores button 
+- A "Lets Begin!" button
 
 2. Quiz Page:
-- A `H1` animated heading
+- A `H1` heading
 - Question counter
 - A score count 
 - Quiz questions
 - 4 answer options 
 
 3. End of quiz page:
-- A `H1` animated heading 
+- A `H1` heading 
 - Form to submit a name and high score
 - Control buttons
 
 4. High Scores page:
-- A `H1` animated heading
+- A `H1` heading
 - List of top 5 high scores
-- Go Home button 
+- Play again button 
 
 ### Structure
 This is a multi-page website to keep the amount of information on each page limited and easy to digest; the rules, game and high scores are all separated so that anyone using the website can find what they want easily.
