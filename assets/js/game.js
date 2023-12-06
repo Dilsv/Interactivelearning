@@ -125,7 +125,8 @@ function startGame() {
 }
 
 // Function to shuffle questions at the beginning of each game
-
+function shuffleQuestionBank () {
+}
 
 // function to limit the quiz to 10 questions and then show score
 function nextQuestion () {
@@ -135,3 +136,25 @@ function nextQuestion () {
   showScore();
 }}
 
+// Function to show next question and answers
+function displayQuestion(question) {
+  const questionElement = document.getElementById("question");
+  const answersElement = document.getElementById("answers");
+
+  questionElement.textContent = question.question;
+  answersElement.innerHTML = ""; // Clear previous answer
+
+   // Display answer options
+   question.answers.forEach((answer, index) => {
+    const li = document.createElement("li");
+    li.textContent = answer;
+    li.onclick = function () {
+      checkAnswer(answer, question.correctAnswer);
+    };
+    answersElement.appendChild(li);
+  });
+}
+
+// Move to the next question
+showNextQuestion(); {
+}
