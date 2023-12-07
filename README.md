@@ -76,16 +76,16 @@ The quiz itself has a question, and four possible answers to pick from. This lay
 
 ### Skeleton
 `Home Page`
-[View wireframes here](assets/readme-files/wireframes/home-page.png) 
+[View wireframes here]
 
 `Instructions`
-[View wireframes here](assets/readme-files/wireframes/instructions.png) 
+[View wireframes here]
 
 `Quiz` 
-[View wireframes here](assets/readme-files/wireframes/quiz.png) 
+[View wireframes here]
 
 `High Scores page`
-[View wireframes here](assets/readme-files/wireframes/high-scores.png) 
+[View wireframes here]
 
 
 I made a few changes to the design post creating the wireframes. These include removal of the toggle menu as there weren't many items included there and also collapsing the instructions into one section which can be found on the home page. 
@@ -108,14 +108,12 @@ All page titles are `H1` elements, they are centred and large in size so there i
 ### *Buttons*
 All of the navigation buttons throughout the site are styled in the same way, using a bold colour of red and a hover effect to draw the user to them. 
 
-### Home page
-#### *Animated Gif*
-The animated gif was implemented to create a fun and intriguing landing page. 
+### Home page 
 
-#### *Animated heading*
-In addition to the gif I chose to animate the heading to continue that feeling of fun, I felt this would entice users over a static heading.
+#### *Heading*
+I chose to make the heading a direction back to the home page; I did this to minimise difficulty making it user friendly for the younger ages engaging with the quiz.
 
-#### *Start Game button*
+#### *Lets Begin button*
 I wanted to keep this on the Home Page to make it easy for the user to find and the website easy to navigate. 
 
 #### *High Scores button*
@@ -123,7 +121,7 @@ After removing my toggle menu it was apparent that the High Scores needs to be a
 
 ### Instructions
 #### *Instructions list*
-The list of rules is a `ul` element, it has been styled to remain in the centre of the screen to allow for better responsivity.
+The list of rules is a `div` element, it has been styled to remain within the centre of the screen to allow for better responsivity.
 
 ### Quiz
 #### *Quiz elements*
