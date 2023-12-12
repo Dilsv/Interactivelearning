@@ -219,13 +219,13 @@ function showScore() {
   commentElement.style.display = "block";
 
   if (score === 10) {
-    commentElement.innerHTML = "Congratulations! You are a True Words Genius!";
+    commentElement.innerHTML = "Congratulations! You are a matching Genius!";
   } else if (score >= 7 && score <= 9) {
-    commentElement.innerHTML = "Wow! You are an expert vocabularian. Keep playing!";
+    commentElement.innerHTML = "Wow! You smashed it! Keep playing!";
   } else if (score >= 1 && score <= 6) {
     commentElement.innerHTML = "Great effort! Keep playing!";
   } else {
-    commentElement.innerHTML = "You can only get better. Keep playing!";
+    commentElement.innerHTML = "Let's try beating the highscore! Keep going!";
   }
 
   playAgainButton.style.display = "block";
