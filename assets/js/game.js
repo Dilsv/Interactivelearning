@@ -112,8 +112,8 @@ const questionBank = [
 
 let questionNumber;
 let questionElement = document.getElementById("question"); 
-let answerElement = document.getElementById("btn-grid");
-let oldScore = parseInt(document.getElementById("correct-score").innerText);
+let answerElement = document.getElementById("btn-box");
+let oldScore = parseInt(document.getElementById("correct-score-counter").innerText);
 let nextButton = document.getElementById("next-btn"); 
 let playAgainButton = document.getElementById("play-again-btn");
 let shuffledQuestions = questionBank.sort(() => Math.random() - .5);
@@ -133,52 +133,59 @@ let shuffledQuestions = questionBank.sort(() => Math.random() - .5);
 showQuestion ();
 }
 
-// Function to show next question and answers
 function showQuestion() {
-resetState();
+  resetState();
 
-let currentQuestion = shuffledQuestions[questionNumber]; 
-questionNumber = questionNumber + 1; // Questions start at number 1 for user
+  const currentQuestion = shuffledQuestions[questionNumber++];
+  questionElement.innerHTML = `${questionNumber}. ${currentQuestion.question}`;
 
-questionElement.innerHTML = questionNumber + ". " + currentQuestion.question;
+  currentQuestion.answers.forEach(answer => {
+    const button = document.createElement("button");
+    button.innerHTML = answer.text;
+    button.classList.add("btn", "answer-btn");
 
-currentQuestion.answers.forEach(answer => {
-  const button = document.createElement("button"); 
-  button.innerHTML = answer.text; 
-  button.classList.add("btn");
-  button.classList.add("answer-btn");
-  answerElement.appendChild(button);
+    if (answer.correct) {
+      button.dataset.correct = answer.correct;
+    }
 
-  if (answer.correct) { 
-    button.dataset.correct = answer.correct;
-  }
-  button.addEventListener("click", selectAnswer);
-});
+    button.addEventListener("click", selectAnswer);
+    answerElement.appendChild(button);
+  });
 }
+
 
 // Function to check answer, display feedback, and show Next button
-function selectAnswer(e) { 
+function selectAnswer(e) {
+  const selectedButton = e.target;
+  const isCorrect = selectedButton.dataset.correct === "true";
 
-const selectedButton = e.target;
-const isCorrect = selectedButton.dataset.correct === "true";
-
-if (isCorrect) { // Selected button will turn green or red according to class styling
-  selectedButton.classList.add("correct");
-  incrementCorrect(); 
-} else {
-  selectedButton.classList.add("incorrect");
-  incrementIncorrect();
+  applyAnswerStyles(selectedButton, isCorrect);
+  disableAllAnswerButtons();
+  showNextButton();
 }
 
-Array.from(answerElement.children).forEach(button => { // Create an array for the answer buttons so we can loop through them
-  if (button.dataset.correct === "true") { 
-    button.classList.add("correct"); // Add a class of correct to the correct answer so that it turns green when the incorrect answer is selected
-  }
-  button.disabled = true; 
-});
+function applyAnswerStyles(button, isCorrect) {
+  button.classList.add(isCorrect ? "correct" : "incorrect");
+  isCorrect ? incrementCorrect() : incrementIncorrect();
 
-nextButton.style.display = "block";
+  Array.from(answerElement.children).forEach(btn => {
+    if (btn.dataset.correct === "true") {
+      btn.classList.add("correct");
+    }
+    btn.disabled = true;
+  });
 }
+
+function disableAllAnswerButtons() {
+  Array.from(answerElement.children).forEach(button => {
+    button.disabled = true;
+  });
+}
+
+function showNextButton() {
+  nextButton.style.display = "block";
+}
+
 
 // Function to remove answer buttons, next button, play again button and score-comment
 function resetState() {
@@ -200,43 +207,54 @@ showScore();
 }}
 
 // Function to show score, score-comment and play again button
-function showScore () {
-resetState();
-questionElement.innerHTML = `You scored ${oldScore}/10!`;
-document.getElementById("score-area").style.display = "none";
-document.getElementById("score-comment").style.display = "block";
+function showScore() {
+  resetState();
 
-if (oldScore === 10) {
-  document.getElementById("score-comment").innerHTML = "Congratulations! You are a True Words Genius!";
-} else if (oldScore >= 7 && oldScore <= 9) {
-  document.getElementById("score-comment").innerHTML = "Wow! You are an expert vocabularian. Keep playing!";
-} else if (oldScore >= 1 && oldScore <= 6) {
-  document.getElementById("score-comment").innerHTML = "Great effort! Keep playing!";
-} else {
-  document.getElementById("score-comment").innerHTML = "You can only get better. Keep playing!";
+  const score = oldScore;
+  const scoreElement = document.getElementById("score-area");
+  const commentElement = document.getElementById("score-comment");
+
+  questionElement.innerHTML = `You scored ${score}/10!`;
+  scoreElement.style.display = "none";
+  commentElement.style.display = "block";
+
+  if (score === 10) {
+    commentElement.innerHTML = "Congratulations! You are a True Words Genius!";
+  } else if (score >= 7 && score <= 9) {
+    commentElement.innerHTML = "Wow! You are an expert vocabularian. Keep playing!";
+  } else if (score >= 1 && score <= 6) {
+    commentElement.innerHTML = "Great effort! Keep playing!";
+  } else {
+    commentElement.innerHTML = "You can only get better. Keep playing!";
+  }
+
+  playAgainButton.style.display = "block";
 }
 
-playAgainButton.style.display = "block";
-}
 
 // Function to reset scores back to 0 for play again
 function resetScore () {
 
-let correctScore = document.getElementById("correct-score");
+let correctScore = document.getElementById("correct-score-score");
 correctScore.innerText = 0;
 
-let incorrectScore = document.getElementById("incorrect-score");
+let incorrectScore = document.getElementById("incorrect-score-coutner-score");
 incorrectScore.innerText = 0;
 }
 
 // Functions to increment scores
+
+// Variables for scores
+let correctScore = 0;
+let incorrectScore = 0;
+
+
 function incrementCorrect() { 
-document.getElementById("correct-score").innerText = ++oldScore;
+document.getElementById("correct-score-counter").innerText = ++correctScore;
 }
 
 function incrementIncorrect() {
-let oldScore = parseInt(document.getElementById("incorrect-score").innerText);
-document.getElementById("incorrect-score").innerText = ++oldScore;
+document.getElementById("incorrect-score-counter").innerText = ++incorrectScore;
 }
 
 // Event Listeners

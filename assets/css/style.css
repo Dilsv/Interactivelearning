@@ -14,7 +14,6 @@ body {
     max-width: 600px;
     margin: 100px auto 0;
     border-radius: 10px;
-    padding: 10px;
 }
 
 /* Main page starts here*/
@@ -78,34 +77,35 @@ body {
 
 /* Question buttons*/
 
-#btn-grid {
+#btn-box {
     text-align: center;
     font-family: "Acme", sans-serif;
-    color: #4ab025;
-    font-size: 25px;
-    padding: 10px 0 10px 0;
-    margin: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 10px;
 }
 
 .answer-btn {
     text-align: center;
     font-family: "Acme", sans-serif;
+    font-size: 10px;
     background-color: #4ab025;
-    padding-right: 10px;
-    padding-left: 10px;
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 100px;
+    height: 40px;
 }
 
-#btn {
+#score-area {
     font-family: "Acme", sans-serif;
     padding-right: 5px;
     padding-left: 0px;
+    color: #000;
 }
 
 .scores {
     display: inline;
-    padding-left: 100px;
+    text-align: center;
 }
 
 #question {
@@ -113,11 +113,7 @@ body {
     text-size-adjust: 10px;
     font-family: "Acme", sans-serif;
     color: #000;
-}
-
-.btn:hover {
-    background-color: green;
-    color: rgb(233, 238, 233);
+    font-size: 50px;
 }
 
 #correct-score {
@@ -130,10 +126,16 @@ body {
     font-weight: bold;
 }
 
-#end-game {
+#play-again-btn {
     background-color: #4ab025;
-    padding-right: 10px;
-    padding-left: 10px;
-    margin-left: 80px;
-    margin-right: 80px;
+    font-family: "Acme", sans-serif;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#next-btn {
+    background-color: #4ab025;
+    font-family: "Acme", sans-serif;
+    border-radius: 10px;
+    text-align: center;
 }
