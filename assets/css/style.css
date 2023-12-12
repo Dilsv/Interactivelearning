@@ -38,21 +38,102 @@ body {
     padding: 30px;
 }
 
-/*Highscore and play again button*/
+/*Highscore, play again and lets begin button*/
 
 #high-score {
     background-color: #4ab025;
     font-family: "Acme", sans-serif;
+    border-radius: 10px;
 }
 
 #play-cmt {
     background-color: #4ab025;
     font-family: "Acme", sans-serif;
+    border-radius: 10px;
 
+}
+
+.begin {
+    background-color: #4ab025;
+    font-family: "Acme", sans-serif;
+    border-radius: 10px;
 }
 
 #text {
     text-align: center;
     font-family: "Acme", sans-serif;
     color: #4ab025;
+}
+
+/* Quiz container*/
+
+#quiz-container {
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    opacity: 0.6;
+}
+
+/* Question buttons*/
+
+#btn-grid {
+    text-align: center;
+    font-family: "Acme", sans-serif;
+    color: #4ab025;
+    font-size: 25px;
+    padding: 10px 0 10px 0;
+    margin: 10px;
+}
+
+.answer-btn {
+    text-align: center;
+    font-family: "Acme", sans-serif;
+    background-color: #4ab025;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+#btn {
+    font-family: "Acme", sans-serif;
+    padding-right: 5px;
+    padding-left: 0px;
+}
+
+.scores {
+    display: inline;
+    padding-left: 100px;
+}
+
+#question {
+    text-align: center;
+    text-size-adjust: 10px;
+    font-family: "Acme", sans-serif;
+    color: #000;
+}
+
+.btn:hover {
+    background-color: green;
+    color: rgb(233, 238, 233);
+}
+
+#correct-score {
+    color: green;
+    font-weight: bold;
+}
+
+#incorrect-score {
+    color: red;
+    font-weight: bold;
+}
+
+#end-game {
+    background-color: #4ab025;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 80px;
+    margin-right: 80px;
 }
