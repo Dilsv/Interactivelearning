@@ -84,7 +84,7 @@ This is a multi-page website to keep the amount of information on each page limi
 I made a few changes to the design post creating the wireframes. These includes the responsiveness of the quiz boxes on a mobile screen and also directing the home page via the main title.
 
 ### Surface
-I chose to use a background image of a retro gaming background. For the title, I chose a bright purple to make sure this was clear to read and bold. For the subheadings and footer, I chose purple to compliment the background but also for it to remain consistent. For any content text, I chose the colour black to make this stand out and easy to read. For any buttons, I chose to highlight these in the same purple to draw the user to them, and the text within them black. I feel that this colour palette is quite age-neutral and keeps the theme consistent, highlighting the element's that are important to the user which makes navigating the website easier. 
+I chose to use a background image of a retro gaming background. For the title, I chose a bright purple to make sure this was clear to read and bold. For the subheadings and footer, I chose purple to compliment the background but also for it to remain consistent. For any content text, I chose the colour black to make this stand out and easy to read. For any buttons, I chose to highlight these in the same purple to draw the user to them, and the text within them white. I feel that this colour palette is quite age-neutral and keeps the theme consistent, highlighting the element's that are important to the user which makes navigating the website easier. 
 
 The font used is `Abel` and `Acme`. The font `Acme` is used as the main title and for the questions. The remaining elements are all in the font `Abel`. 
 
@@ -119,9 +119,9 @@ The list of rules is a `div` element, it has been styled to remain within the ce
 ### Quiz
 #### *Quiz elements*
 The quiz is made up of the following: 
-- Two progress items (question & score counts), which remain at the top of the quiz on opposite sides of the page so the user can see their progress.
+- Two progress items (question & score counts), which remain at the bottom of the quiz beneath the answer boxes.
 - Question, this is dynamically created each time a new question is generated but always remains in the centre of the screen.
-- Answer buttons, these are styled in a simple way to highlight the answer choices. The border colour will change on the user answering correctly or incorrectly. 
+- Answer buttons, these are styled in a simple way to highlight the answer choices. The border colour will change on the user answering correctly or incorrectly. ---------------------------
 
 ### End page
 
@@ -136,16 +136,16 @@ The High Scores Leaderboard is an `ul` element, it has been styled to remain in 
 ## Technologies Used
 I have used several technologies that have enabled this design to work:
 
-- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [HTML](https://www.w3schools.com/html/)
     - Used as the basic building block for the project and to structure the content.
-- [CSS](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics)
+- [CSS](https://www.w3schools.com/css/)
     - Used to style all the web content across the project. 
-- [JavaScript](https://www.javascript.com/)
-    - Used for the responsive navbar, animated heading, quiz functionality & sound effects and high-scores leaderboard.
+- [JavaScript](https://www.udemy.com/course/professional-javascript-course/learn/lecture/36385806#overview)
+    - Used for the responsive navbar, quiz functionality & sound effects ----.
 - [Google Fonts](https://fonts.google.com/)
-    - Used to obtain the fonts linked in the header, fonts used were Playfair and Cookie
+    - Used to obtain the fonts linked in the header.
 - [Font Awesome](https://fontawesome.com/)
-    - Used to obtain the icons used on the high scores and rules pages.
+    - Used to obtain the icons used on the high scores and rules pages. ------------
 - [Google Developer Tools](https://developers.google.com/web/tools/chrome-devtools)
     - Used as a primary method of fixing spacing issues, finding bugs, and testing responsiveness across the project.
 - [GitHub](https://github.com/)
@@ -157,13 +157,13 @@ I have used several technologies that have enabled this design to work:
 - [Balsamiq](https://balsamiq.com/)
     - Used to create the wireframes for the project.
 - [Grammarly](https://www.grammarly.com/)
-    - Used to fix the grammar errors across the project.
+    - Used to fix the grammar errors across the project. ----------
 - [W3C Markup Validation Service](https://validator.w3.org/) 
     - Used to validate all HTML code written and used in this webpage.
 - [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input)
     - Used to validate all CSS code written and used in this webpage.
 - [AmIResponsive](http://ami.responsivedesign.is/)
-    - Used to generate responsive image used in README file.
+    - Used to generate responsive image used in README file. -------------
 - [YouTube] (https://www.youtube.com/watch?v=PBcqGxrr9g8)
     - Used for guidance when writing JavaScript codes.
 - [JSHint] (https://jshint.com/)
@@ -173,12 +173,12 @@ I have used several technologies that have enabled this design to work:
 
 ### User Stories 
 1. **As a first time user, I want to be able to navigate my way easily throughout the website.**
-The navbar being placed right at the top of all pages allows the user to return to the home page at any point. To improve this in the future I would probably include an animation that points this action out to the user as some users may not know to click the Pub Quiz heading to return home. 
+The navbar being placed right at the top of all pages allows the user to return to the home page at any point. To improve this in the future I would probably include an animation that points this action out to the user as some users may not know to click the Snap Mathes heading to return home. 
 ![](assets/readme-files/testing/return-home.gif) ----------------------
 
 2. **As a first time user, I want to have fun by playing a quiz game.**
 As part of the quiz design, I added visual cues so that the user will know when they have answered a question correctly or incorrectly. This instant feedback will allow them to learn as they play the quiz. In future, I think it would be beneficial to the user if when they get the answer incorrect the correct answer is also highlighted. 
-![](assets/readme-files/testing/visual-cues.gif)
+![](assets/readme-files/testing/visual-cues.gif) ------------------------
 
 
 3. **As a recurring user, I want to track my scores to see if I've made the high scores leaderboard.**
@@ -187,29 +187,18 @@ Upon completing the quiz the user is taken to the end page, where they are able 
 
 ### Lighthouse
 I used the Lighthouse report on Google Dev Tools to test my websites performance, accessibility and best practices. The results are as followed: 
-![](assets/readme-files/validators/).     Add lighthouse image
+![](assets/read.me-files/validators/lighthouse-report.png).
 
-I also tested my website in Firefox, Google and Safari to ensure that my website worked on most browsers without any issues.
+I also tested my website in Google and Safari to ensure that my website worked on most browsers without any issues.
 
 ### Known bugs and fixes
-Throughout building this project, I used Goodle Chrome Developer Tools, W3 Schools, Stack ovreflow and JSHint to debug any issues with styling and alignment; this tool highlighted anything that needed changing as i could do it instantly as it gave me the effect these changes had immediately. The 'console.log()' was also helpful as it allowed me to check my functions were being called correctly and the correct information was to be displayed.
+
+While constructing this project, I employed Google Chrome Developer Tools, referred to W3 Schools and Stack Overflow, and utilized JSHint for troubleshooting styling and alignment issues. This tool promptly identified elements requiring modification, enabling me to observe the immediate effects of the changes. Additionally, the 'console.log()' function proved beneficial for verifying the accurate invocation of my functions and ensuring the correct information was displayed.
 
 I tested the quizzes functionality by 'playing' it myself, to ensure the user experience was positive and that everything was working as it should. 
 
 **Counting Error**
 On all devices, when the user was playing the quiz it wasn't counting the 'Correct' and 'Incorrect' scores correctly, therefore I made sure my JavaScript function was calling the correct functions in order to carry this out accurately.
-
-**Title underline** 
-On mobile and desktop, there was a small line between Pub and Quiz in my heading. I resolved this by setting the text-decoration to none in my CSS. 
-
-**Input field for user name**
-The user was able to enter blank spaces and save that as there name. To fix this, I had help from a fellow peer (Harry Dhillon) who shared this piece of code `input type="text" name="username" placeholder="Please enter your name!" id="username" pattern="[a-zA-Z0-9]{5,15}" aria-label="Add your name for the high-scores leaderboard!" required` which fixed the error. 
-
-**Gif styling on tablet** 
-On tablet view, sometimes the gif on the home page gets pushed to the side and isn't centrally aligned. This is an ongoing issue that I hope to resolve in the future. 
-
-**JShint warning-undefined variable**
- I had a warning when validating my JavaScript code using JSHint. In my title.js I had an undefined variable (anime). To fix this I used `/* globals anime */` comment to ignore that variable. 
 
 
 ### Validation: HTML, CSS and JavaScript
@@ -277,19 +266,17 @@ The following websites/articles were used for research and guidance:
 
 I obtained code from the following resources:
 
-[Vanilla JavaScript quiz tutorial](https://www.youtube.com/watch?v=f4fB9Xg2JEY)
+[Vanilla JavaScript quiz tutorial](https://www.youtube.com/watch?v=PBcqGxrr9g8)
 
-[Animated heading code](https://tobiasahlin.com/moving-letters/#6)
-
-[Animated fade effect on Gif](https://www.geeksforgeeks.org/how-to-add-fade-in-effect-using-pure-javascript/)
+[Helen Murugan](https://github.com/helenmurugan/true-words-quiz)
 
 The below sources were used for content: 
 
-[Gif on Home Page](https://gfycat.com/@gfycatstickers)
+[Google images](https://www.google.com/imghp?hl=en&ogbl)
 
-[Quiz questions](https://www.radiotimes.com)
+[Quiz questions](https://chat.openai.com/)
 
-[Instructions](https://www.mobygames.com/game/dvd-player/pub-quiz-volume-1/screenshots/gameShotId,905437/)
+[Instructions](https://play.google.com/store/apps/details?id=com.mapi.matchpicstowords&hl=en_GB&gl=US)
 
 ---
 ## Acknowledgements
@@ -298,4 +285,4 @@ I would like to thank my course mentor Sandeep Aggarwal for his support and guid
 
 ## Notes 
 
-I had received my feedback for my initial Project 1 whilst starting this project. My aim in my initial P1 was to work on the guidelines of a Merit. This time I made sure to learn from the mistakes I had done in my P1 and not to make them again in this submission such as the amount of commits I made. I will strive to be better as each project approaches. Thank you.
+I had received my feedback for my initial Project 1 whilst starting this project. My aim in my initial P1 was to work on the guidelines of a Merit. This time I made sure to learn from the mistakes I had done in my P1 and not to make them again in this submission such as the amount of commits I made. I will strive to be better as each project approaches.
