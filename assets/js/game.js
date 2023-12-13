@@ -183,12 +183,6 @@ function applyAnswerStyles(button, isCorrect) {
   });
 }
 
-// function disableAllAnswerButtons() {
-//     Array.from(answerElement.children).forEach((button) => {
-//         button.disabled = true;
-//     });
-// }
-
 function showNextButton() {
   nextButton.style.display = "block";
 }
