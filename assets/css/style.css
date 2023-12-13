@@ -117,10 +117,9 @@ body {
 
 #question {
     text-align: center;
-    text-size-adjust: 10px;
     font-family: "Acme", sans-serif;
     color: #000;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 #correct-score-counter {

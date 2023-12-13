@@ -12,7 +12,7 @@ This website has been produced to provide a platform for a fun and interactional
 In addition to the home page this website also features:
 - The 'Quiz' page
 - A 'Instructions section'
-- A 'High Scores' page -----------
+- An 'Overall score section'
 
 The business goals of the website is:
 1. To provide an interactional and enjoyable game designed for ages 11 and above.
@@ -30,14 +30,14 @@ The user goals of this website is:
 ### Strategy
 Using the core UX principles I first started with Strategy, thinking about the target audience for this quiz & the features they would want.
 
-The target audience for 'Matches' are:
+The target audience for 'Snap Matches' are:
 - People aged 11+
 - People who are interested in problem-solving.
 - People who want to improve test their good sense. 
 
 Features that they would need to be included:
-- A fun & interactive quiz
-- The ability to track their high scores so they can see if they're improving 
+- A fun & interactive quiz.
+- The ability to track their overall scores so they can see if they're improving.
 
 It was important to me that this website was simple, easy to navigate and use to to ensure all users had an enjoyable experience hence, each page was designed with minimal information and naviation using simple language.
 
@@ -49,7 +49,6 @@ To achieve the desired user and business goals this website will include the fol
 - A `H1` heading
 - An instructions 'div`
 - Start game button
-- A High Scores button 
 - A "Lets Begin!" button
 
 2. Quiz Page:
@@ -57,33 +56,29 @@ To achieve the desired user and business goals this website will include the fol
 - Question counter
 - A score count 
 - Quiz questions
-- 4 answer options 
+- 4 answer options
 
 3. End of quiz page:
-- A `H1` heading 
-- Form to submit a name and high score --------------
-- Control buttons
-
-4. High Scores page:
 - A `H1` heading
-- List of top 5 high scores --------------
-- Play again button 
+- An overall scoring
+- Control buttons
+- A 'Play Again!' button
 
 ### Structure
 This is a multi-page website to keep the amount of information on each page limited and easy to digest; the rules, game and play again page are all separated so that anyone using the website can find what they want without struggle. Each page is designed with simplicity in mind, with a H1 element that returns the user home and the relevant content centred below; this simplicity will allow for users to feel comfortable using and navigating each page. The quiz itself has a question, and four possible answers to pick from. This layout will be responsive so that it isn't too cramped when being viewed on a smaller screen.
 
 ### Skeleton
-`Home Page`
-[View wireframes here]
-
-`Instructions`
-[View wireframes here]
+`Home Page and Instructions`
+[View wireframes here](assets/read.me-files/wireframes/main-page-wf.png)
 
 `Quiz` 
-[View wireframes here]
+[View wireframes here](assets/read.me-files/wireframes/quiz-page-wf.png)
 
-`High Scores page`
-[View wireframes here]
+`Play Again`
+[View wireframes here](assets/read.me-files/wireframes/end-page-wf.png)
+
+`iPad and mobile pages`
+[View wireframes here](assets/read.me-files/wireframes/ipad-mob-wf.png)
 
 
 I made a few changes to the design post creating the wireframes. These includes the responsiveness of the quiz boxes on a mobile screen and also directing the home page via the main title.
