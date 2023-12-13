@@ -70,9 +70,7 @@ To achieve the desired user and business goals this website will include the fol
 - Play again button 
 
 ### Structure
-This is a multi-page website to keep the amount of information on each page limited and easy to digest; the rules, game and high scores are all separated so that anyone using the website can find what they want easily.
-Each page is designed with simplicity in mind, with a H1 element that returns the user home and the relevant content centred below; this simplicity will allow for users to feel comfortable using and navigating each page. 
-The quiz itself has a question, and four possible answers to pick from. This layout will be responsive so that it isn't too squashed when being viewed on a smaller screen.
+This is a multi-page website to keep the amount of information on each page limited and easy to digest; the rules, game and play again page are all separated so that anyone using the website can find what they want without struggle. Each page is designed with simplicity in mind, with a H1 element that returns the user home and the relevant content centred below; this simplicity will allow for users to feel comfortable using and navigating each page. The quiz itself has a question, and four possible answers to pick from. This layout will be responsive so that it isn't too squashed when being viewed on a smaller screen.
 
 ### Skeleton
 `Home Page`
@@ -88,7 +86,7 @@ The quiz itself has a question, and four possible answers to pick from. This lay
 [View wireframes here]
 
 
-I made a few changes to the design post creating the wireframes. These include removal of the toggle menu as there weren't many items included there and also collapsing the instructions into one section which can be found on the home page. 
+I made a few changes to the design post creating the wireframes. These includes the responsiveness of the quiz boxes on a mobile screen and also directing the home page via the main title.
 
 ### Surface
 I chose to use a background colour of dark Slate Grey. For the title, I chose a bright yellow to make sure this was clear to read and bold. For the subheadings and footer, I chose orange to compliment the other colour's used. For any content text, I chose the colour white to make this stand out and easy to read. For any buttons, I chose to highlight these in red to draw the user to them, and the text within them yellow. I feel that this colour palette is quite gender-neutral, highlighting the element's that are important to the user which makes navigating the website easier. 
