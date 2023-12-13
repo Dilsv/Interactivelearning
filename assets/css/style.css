@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Acme&display=swap');
 
 body {
-    background-image: url("../images/hero-image.jpeg");
+    background-image: url("../images/hero-neon.jpeg");
     background-size: cover;
 }
 
@@ -42,7 +42,7 @@ body {
 
 #high-score {
     background-color: #b100e8;
-    font-family: "Acme", sans-serif;
+    font-family: "Abel", sans-serif;
     border-radius: 10px;
 }
 
@@ -54,15 +54,17 @@ body {
 }
 
 .begin {
-    background-color: #b100e8;
+    text-align: center;
+    color: #ffffff;
+    background-color: #000;
     font-family: "Acme", sans-serif;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 #text {
     text-align: center;
     font-family: "Acme", sans-serif;
-    color: #b100e8;
+    color: #000;
     padding-top: 50px;
 }
 
@@ -89,9 +91,10 @@ body {
 
 .answer-btn {
     text-align: center;
+    color: #fff;
     font-family: "Acme", sans-serif;
-    font-size: 10px;
-    background-color: #b100e8;
+    font-size: 15px;
+    background-color: #000;
     margin-left: 5px;
     margin-right: 5px;
     width: 100px;
@@ -100,6 +103,7 @@ body {
 }
 
 #score-area {
+    text-align: center;
     font-family: "Acme", sans-serif;
     padding-right: 5px;
     padding-left: 0px;
@@ -119,26 +123,33 @@ body {
     font-size: 50px;
 }
 
-#correct-score {
+#correct-score-counter {
     color: green;
     font-weight: bold;
 }
 
-#incorrect-score {
+#incorrect-score-counter {
     color: red;
     font-weight: bold;
 }
 
 #play-again-btn {
-    background-color: #b100e8;
+    text-align: center;
+    color: #fff;
+    background-color: #000;
     font-family: "Acme", sans-serif;
     border-radius: 10px;
-    text-align: center;
 }
 
 #next-btn {
-    background-color: #b100e8;
-    font-family: "Acme", sans-serif;
-    border-radius: 10px;
     text-align: center;
+    color: #fff;
+    background-color: #000;
+    font-family: "Acme", sans-serif;
+    border-radius: 15px;
+}
+
+#score-comment {
+    text-align: center;
+    font-family: "Acme", sans-serif;
 }
