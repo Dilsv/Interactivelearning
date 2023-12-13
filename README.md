@@ -1,8 +1,8 @@
-# Interactivelearning
+# Snap Matches
 
 ![](assets/readme-files/amiresponsive.png)
 
-[View the website here] https://dilsv.github.io/Interactivelearning/
+[View the website here] https://dilsv.github.io/Snapmatches/
 
 
 ## Introduction 
@@ -61,16 +61,16 @@ To achieve the desired user and business goals this website will include the fol
 
 3. End of quiz page:
 - A `H1` heading 
-- Form to submit a name and high score
+- Form to submit a name and high score --------------
 - Control buttons
 
 4. High Scores page:
 - A `H1` heading
-- List of top 5 high scores
+- List of top 5 high scores --------------
 - Play again button 
 
 ### Structure
-This is a multi-page website to keep the amount of information on each page limited and easy to digest; the rules, game and play again page are all separated so that anyone using the website can find what they want without struggle. Each page is designed with simplicity in mind, with a H1 element that returns the user home and the relevant content centred below; this simplicity will allow for users to feel comfortable using and navigating each page. The quiz itself has a question, and four possible answers to pick from. This layout will be responsive so that it isn't too squashed when being viewed on a smaller screen.
+This is a multi-page website to keep the amount of information on each page limited and easy to digest; the rules, game and play again page are all separated so that anyone using the website can find what they want without struggle. Each page is designed with simplicity in mind, with a H1 element that returns the user home and the relevant content centred below; this simplicity will allow for users to feel comfortable using and navigating each page. The quiz itself has a question, and four possible answers to pick from. This layout will be responsive so that it isn't too cramped when being viewed on a smaller screen.
 
 ### Skeleton
 `Home Page`
@@ -89,37 +89,37 @@ This is a multi-page website to keep the amount of information on each page limi
 I made a few changes to the design post creating the wireframes. These includes the responsiveness of the quiz boxes on a mobile screen and also directing the home page via the main title.
 
 ### Surface
-I chose to use a background colour of dark Slate Grey. For the title, I chose a bright yellow to make sure this was clear to read and bold. For the subheadings and footer, I chose orange to compliment the other colour's used. For any content text, I chose the colour white to make this stand out and easy to read. For any buttons, I chose to highlight these in red to draw the user to them, and the text within them yellow. I feel that this colour palette is quite gender-neutral, highlighting the element's that are important to the user which makes navigating the website easier. 
+I chose to use a background image of a retro gaming background. For the title, I chose a bright purple to make sure this was clear to read and bold. For the subheadings and footer, I chose purple to compliment the background but also for it to remain consistent. For any content text, I chose the colour black to make this stand out and easy to read. For any buttons, I chose to highlight these in the same purple to draw the user to them, and the text within them black. I feel that this colour palette is quite age-neutral and keeps the theme consistent, highlighting the element's that are important to the user which makes navigating the website easier. 
 
-The font used is `Oswald` and `Bungee`. The font `Bungee` is used as the main title and for the questions. The remaining elements are all in the font `Oswald`. 
+The font used is `Abel` and `Acme`. The font `Acme` is used as the main title and for the questions. The remaining elements are all in the font `Abel`. 
 
 ---
 ## Features 
 
 ### All pages
 #### *Navbar*
-The navbar features on all pages & is fully responsive and returns the user to the home page when clicked. 
+The navbar features on all pages & is fully responsive and returns the user to the home page when clicked. ------------------------------
 
 ### *Title* 
-All page titles are `H1` elements, they are centred and large in size so there is no ambiguity as to which page the user is on. Clicking this will return the user to the Home Page.
+All page titles are `H1` elements, they are centred and large in size so there is no visual difficulty as to which page the user is on. Clicking this will return the user to the Home Page.
 
 ### *Buttons*
-All of the navigation buttons throughout the site are styled in the same way, using a bold colour of red and a hover effect to draw the user to them. 
+All of the navigation buttons throughout the site are styled in the same way, using a bold colour of purple and a -------- hover effect to draw the user to them. ---------
 
 ### Home page 
 
 #### *Heading*
-I chose to make the heading a direction back to the home page; I did this to minimise difficulty making it user friendly for the younger ages engaging with the quiz.
+I chose to make the heading a direction back to the home page; I did this to minimise difficulty making it user friendly for the younger ages engaging with the quiz. -------------
 
 #### *Lets Begin button*
 I wanted to keep this on the Home Page to make it easy for the user to find and the website easy to navigate. 
 
 #### *High Scores button*
-After removing my toggle menu it was apparent that the High Scores needs to be accessible from the Home Page, to allow the users to visit this easily. 
+After removing my toggle menu it was apparent that the High Scores needs to be accessible from the Home Page, to allow the users to visit this easily. ---------------------
 
 ### Instructions
 #### *Instructions list*
-The list of rules is a `div` element, it has been styled to remain within the centre of the screen to allow for better responsivity.
+The list of rules is a `div` element, it has been styled to remain within the centre of the screen to allow for better responsivity but also make readability simple.
 
 ### Quiz
 #### *Quiz elements*
@@ -131,11 +131,11 @@ The quiz is made up of the following:
 ### End page
 
 #### *Save score form*
-For the user to save their score to the High Scores page they need to input their username and click save, this is done using a form made up of a text input and submit button. On clicking save the user will be directed to the High Scores Page. 
+For the user to save their score to the High Scores page they need to input their username and click save, this is done using a form made up of a text input and submit button. On clicking save the user will be directed to the High Scores Page. --------------------
 
 ### High Scores
 #### *High Scores Leaderboard*
-The High Scores Leaderboard is an `ul` element, it has been styled to remain in the centre of the screen to allow for better responsivity. The scores in this list are generated in `highscores.js` using local storage.
+The High Scores Leaderboard is an `ul` element, it has been styled to remain in the centre of the screen to allow for better responsivity. The scores in this list are generated in `highscores.js` using local storage. -----------------------------
 
 ---
 ## Technologies Used
@@ -169,36 +169,40 @@ I have used several technologies that have enabled this design to work:
     - Used to validate all CSS code written and used in this webpage.
 - [AmIResponsive](http://ami.responsivedesign.is/)
     - Used to generate responsive image used in README file.
+- [YouTube] (https://www.youtube.com/watch?v=PBcqGxrr9g8)
+    - Used for guidance when writing JavaScript codes.
+- [JSHint] (https://jshint.com/)
+    - Used to validate JavaScript codes.
 ---
 ## Testing
 
 ### User Stories 
 1. **As a first time user, I want to be able to navigate my way easily throughout the website.**
 The navbar being placed right at the top of all pages allows the user to return to the home page at any point. To improve this in the future I would probably include an animation that points this action out to the user as some users may not know to click the Pub Quiz heading to return home. 
-![](assets/readme-files/testing/return-home.gif)
+![](assets/readme-files/testing/return-home.gif) ----------------------
 
-2. **As a first time user, I want to expand my general knowledge by playing a quiz game.**
+2. **As a first time user, I want to have fun by playing a quiz game.**
 As part of the quiz design, I added visual cues so that the user will know when they have answered a question correctly or incorrectly. This instant feedback will allow them to learn as they play the quiz. In future, I think it would be beneficial to the user if when they get the answer incorrect the correct answer is also highlighted. 
 ![](assets/readme-files/testing/visual-cues.gif)
 
 
 3. **As a recurring user, I want to track my scores to see if I've made the high scores leaderboard.**
 Upon completing the quiz the user is taken to the end page, where they are able to save their score against their username, the top 5 scores saved to local storage are then displayed on the high scores page:
-![](assets/readme-files/testing/highscores.gif)
+![](assets/readme-files/testing/highscores.gif) ------------------------------
 
 ### Lighthouse
 I used the Lighthouse report on Google Dev Tools to test my websites performance, accessibility and best practices. The results are as followed: 
-![](assets/readme-files/validators/lighthouse-report.png)
+![](assets/readme-files/validators/).     Add lighthouse image
 
 I also tested my website in Firefox, Google and Safari to ensure that my website worked on most browsers without any issues.
 
 ### Known bugs and fixes
-Throughout the entire project, I have used Google Chrome Developer Tools to debug any issues with styling and alignment; this tool enabled me to change things and see the effect this had immediately. The use of the console whilst in dev tools was also incredibly helpful as I was able to utilise this to test my JavaScript code, using `console.log()` to check that my functions were being called correctly and that the desired information was going to be displayed. This was pivotal in designing the quiz as I needed to have access to the information of the various elements in order to be able to programme the quiz correctly.
+Throughout building this project, I used Goodle Chrome Developer Tools, W3 Schools, Stack ovreflow and JSHint to debug any issues with styling and alignment; this tool highlighted anything that needed changing as i could do it instantly as it gave me the effect these changes had immediately. The 'console.log()' was also helpful as it allowed me to check my functions were being called correctly and the correct information was to be displayed.
 
 I tested the quizzes functionality by 'playing' it myself, to ensure the user experience was positive and that everything was working as it should. 
 
-**404 error**
-On mobile, when the user completed the quiz and tried to save their name and score, instead of being redirected to the High Scores page it was coming up with a 404 error. I fixed this by removing the '/' before highscores.html in the game.html file. 
+**Counting Error**
+On all devices, when the user was playing the quiz it wasn't counting the 'Correct' and 'Incorrect' scores correctly, therefore I made sure my JavaScript function was calling the correct functions in order to carry this out accurately.
 
 **Title underline** 
 On mobile and desktop, there was a small line between Pub and Quiz in my heading. I resolved this by setting the text-decoration to none in my CSS. 
@@ -295,8 +299,8 @@ The below sources were used for content:
 ---
 ## Acknowledgements
 
-I would like to thank my course mentor Sandeep Aggarwal for his support and guidance throughout the course of the project and my fellow students Harry Dhillon and Daisy Gunn for their support & feedback.
+I would like to thank my course mentor Sandeep Aggarwal for his support and guidance throughout the course of the project and my fellow friends from CI Community Harry Dhillon and Helen Murugan for their support & feedback and examples of their completed submissions.
 
 ## Notes 
 
-As I received my feedback for my P1 after starting this project I have not been able to implement the advice given by the assessor throughout my project. Please note this when looking at my commits. I am aware that some are not as descriptive as they should be. I have tried to be more explanatory going forward. Thank you! 
+I had received my feedback for my initial Project 1 whilst starting this project. My aim in my initial P1 was to work on the guidelines of a Merit. This time I made sure to learn from the mistakes I had done in my P1 and not to make them again in this submission such as the amount of commits I made. I will strive to be better as each project approaches. Thank you.

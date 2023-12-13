@@ -2,13 +2,14 @@
 
 body {
     background-image: url("../images/hero-image.jpeg");
+    background-size: cover;
 }
 
 /* Header starts here*/
 .main-header {
     font-size: 80px;
-    font-family: "Abel", sans-serif;
-    color: #4ab025;
+    font-family: "Acme", sans-serif;
+    color: #b100e8;
     text-align: center;
     width: 90%;
     max-width: 600px;
@@ -40,20 +41,20 @@ body {
 /*Highscore, play again and lets begin button*/
 
 #high-score {
-    background-color: #4ab025;
+    background-color: #b100e8;
     font-family: "Acme", sans-serif;
     border-radius: 10px;
 }
 
 #play-cmt {
-    background-color: #4ab025;
+    background-color: #b100e8;
     font-family: "Acme", sans-serif;
     border-radius: 10px;
 
 }
 
 .begin {
-    background-color: #4ab025;
+    background-color: #b100e8;
     font-family: "Acme", sans-serif;
     border-radius: 10px;
 }
@@ -61,7 +62,8 @@ body {
 #text {
     text-align: center;
     font-family: "Acme", sans-serif;
-    color: #4ab025;
+    color: #b100e8;
+    padding-top: 50px;
 }
 
 /* Quiz container*/
@@ -89,7 +91,7 @@ body {
     text-align: center;
     font-family: "Acme", sans-serif;
     font-size: 10px;
-    background-color: #4ab025;
+    background-color: #b100e8;
     margin-left: 5px;
     margin-right: 5px;
     width: 100px;
@@ -128,14 +130,14 @@ body {
 }
 
 #play-again-btn {
-    background-color: #4ab025;
+    background-color: #b100e8;
     font-family: "Acme", sans-serif;
     border-radius: 10px;
     text-align: center;
 }
 
 #next-btn {
-    background-color: #4ab025;
+    background-color: #b100e8;
     font-family: "Acme", sans-serif;
     border-radius: 10px;
     text-align: center;
