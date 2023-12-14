@@ -11,6 +11,7 @@ body {
     font-family: "Acme", sans-serif;
     color: #b100e8;
     text-align: center;
+    text-decoration: none;
     width: 90%;
     max-width: 600px;
     margin: 100px auto 0;
@@ -55,10 +56,10 @@ body {
 
 .begin {
     text-align: center;
-    color: #ffffff;
+    color: #fff;
     background-color: #000;
     font-family: "Acme", sans-serif;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 #text {

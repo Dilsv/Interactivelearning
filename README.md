@@ -191,9 +191,7 @@ I used the Lighthouse report on Google Dev Tools to test my websites performance
 
 I also tested my website in Google and Safari to ensure that my website worked on most browsers without any issues.
 
-### Known bugs and fixes
-
-While constructing this project, I employed Google Chrome Developer Tools, referred to W3 Schools and Stack Overflow, and utilized JSHint for troubleshooting styling and alignment issues. This tool promptly identified elements requiring modification, enabling me to observe the immediate effects of the changes. Additionally, the 'console.log()' function proved beneficial for verifying the accurate invocation of my functions and ensuring the correct information was displayed.
+During the development of this project, I utilized Google Chrome Developer Tools, consulted W3 Schools and Stack Overflow for reference, and employed JSHint to address styling and alignment issues. JSHint efficiently pinpointed elements in need of adjustment, allowing me to instantly observe the effects of the changes. Moreover, the 'console.log()' function played a crucial role in confirming the proper invocation of my functions and ensuring accurate information display.
 
 I tested the quizzes functionality by 'playing' it myself, to ensure the user experience was positive and that everything was working as it should. 
 
