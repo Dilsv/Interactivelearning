@@ -153,3 +153,10 @@ body {
     text-align: center;
     font-family: "Acme", sans-serif;
 }
+
+@media only screen and (max-width: 800px) { 
+    .answer-btn {
+        height: 30px;
+        width: 70px;
+    }
+}
