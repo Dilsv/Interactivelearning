@@ -7,7 +7,7 @@
 
 ## Introduction 
 
-This website has been produced to provide a platform for a fun and interactional game designed for ages 11+. It offers a quiz method to test the users response time.
+This website has been produced to provide a platform for a fun and interactive game designed for ages 11+. It offers a quiz method to test the user's response time.
 
 In addition to the home page this website also features:
 - The 'Quiz' page
@@ -39,7 +39,7 @@ Features that they would need to be included:
 - A fun & interactive quiz.
 - The ability to track their overall scores so they can see if they're improving.
 
-It was important to me that this website was simple, easy to navigate and use to to ensure all users had an enjoyable experience hence, each page was designed with minimal information and naviation using simple language.
+It was important to me that this website was simple, easy to navigate, use to to ensure all users had an enjoyable experience hence, each page was designed with minimal information and naviation using simple language.
 
 The website has been designed to work well on desktops, tablets and mobile, to ensure that no matter the device the user has a positive user experience.
 
@@ -93,24 +93,21 @@ The font used is `Abel` and `Acme`. The font `Acme` is used as the main title an
 
 ### All pages
 #### *Navbar*
-The navbar features on all pages & is fully responsive and returns the user to the home page when clicked. ------------------------------
+The navbar features on all pages & is fully responsive and returns the user to the home page when clicked.
 
 ### *Title* 
 All page titles are `H1` elements, they are centred and large in size so there is no visual difficulty as to which page the user is on. Clicking this will return the user to the Home Page.
 
 ### *Buttons*
-All of the navigation buttons throughout the site are styled in the same way, using a bold colour of purple and a -------- hover effect to draw the user to them. ---------
+All of the navigation buttons throughout the site are styled in the same way, using a bold black with opacity.
 
 ### Home page 
 
 #### *Heading*
-I chose to make the heading a direction back to the home page; I did this to minimise difficulty making it user friendly for the younger ages engaging with the quiz. -------------
+I decided to set the heading as a link directing users back to the home page. I opted for this approach to simplify navigation, making the quiz more user-friendly, especially for younger participants.
 
 #### *Lets Begin button*
 I wanted to keep this on the Home Page to make it easy for the user to find and the website easy to navigate. 
-
-#### *High Scores button*
-After removing my toggle menu it was apparent that the High Scores needs to be accessible from the Home Page, to allow the users to visit this easily. ---------------------
 
 ### Instructions
 #### *Instructions list*
@@ -121,16 +118,13 @@ The list of rules is a `div` element, it has been styled to remain within the ce
 The quiz is made up of the following: 
 - Two progress items (question & score counts), which remain at the bottom of the quiz beneath the answer boxes.
 - Question, this is dynamically created each time a new question is generated but always remains in the centre of the screen.
-- Answer buttons, these are styled in a simple way to highlight the answer choices. The border colour will change on the user answering correctly or incorrectly. ---------------------------
+- Answer buttons, these are styled in a simple way to highlight the answer choices for the user playing the quiz.
 
 ### End page
 
-#### *Save score form*
-For the user to save their score to the High Scores page they need to input their username and click save, this is done using a form made up of a text input and submit button. On clicking save the user will be directed to the High Scores Page. --------------------
-
-### High Scores
-#### *High Scores Leaderboard*
-The High Scores Leaderboard is an `ul` element, it has been styled to remain in the centre of the screen to allow for better responsivity. The scores in this list are generated in `highscores.js` using local storage. -----------------------------
+### Score Page
+#### *Amount of correct points scored*
+The score point is a `div` element, it has been styled to remain in the centre of the screen to allow for better responsivity. The scores in this list are generated in `games.js` using local storage.
 
 ---
 ## Technologies Used
@@ -173,17 +167,14 @@ I have used several technologies that have enabled this design to work:
 
 ### User Stories 
 1. **As a first time user, I want to be able to navigate my way easily throughout the website.**
-The navbar being placed right at the top of all pages allows the user to return to the home page at any point. To improve this in the future I would probably include an animation that points this action out to the user as some users may not know to click the Snap Mathes heading to return home. 
-![](assets/readme-files/testing/return-home.gif) ----------------------
+The navbar being placed right at the top of all pages allows the user to return to the home page at any point. To improve this in the future I would probably include an animation that points this action out to the user as some users may not know to click the Snap Mathes heading to return home.
 
 2. **As a first time user, I want to have fun by playing a quiz game.**
-As part of the quiz design, I added visual cues so that the user will know when they have answered a question correctly or incorrectly. This instant feedback will allow them to learn as they play the quiz. In future, I think it would be beneficial to the user if when they get the answer incorrect the correct answer is also highlighted. 
-![](assets/readme-files/testing/visual-cues.gif) ------------------------
+In the quiz design, I incorporated visual indicators to signal users when they have answered a question correctly or incorrectly. This immediate feedback is intended to facilitate learning during quiz participation. Looking ahead, I believe it would enhance the user experience if, in the event of an incorrect answer, the correct response is also highlighted for added educational benefit.
 
 
-3. **As a recurring user, I want to track my scores to see if I've made the high scores leaderboard.**
-Upon completing the quiz the user is taken to the end page, where they are able to save their score against their username, the top 5 scores saved to local storage are then displayed on the high scores page:
-![](assets/readme-files/testing/highscores.gif) ------------------------------
+3. **As a recurring user, I want to efficiently run the game with minimal mouse clicks**
+Upon completing the quiz the user is taken to the end page, where they are able to see their score at the end of the game.
 
 ### Lighthouse
 I used the Lighthouse report on Google Dev Tools to test my websites performance, accessibility and best practices. The results are as followed: 
@@ -191,17 +182,31 @@ I used the Lighthouse report on Google Dev Tools to test my websites performance
 
 I also tested my website in Google and Safari to ensure that my website worked on most browsers without any issues.
 
-During the development of this project, I utilized Google Chrome Developer Tools, consulted W3 Schools and Stack Overflow for reference, and employed JSHint to address styling and alignment issues. JSHint efficiently pinpointed elements in need of adjustment, allowing me to instantly observe the effects of the changes. Moreover, the 'console.log()' function played a crucial role in confirming the proper invocation of my functions and ensuring accurate information display.
+During the development of this project, I utilised Google Chrome Developer Tools, consulted W3 Schools and Stack Overflow for reference, and employed JSHint to address styling and alignment issues. JSHint efficiently pinpointed elements in need of adjustment, allowing me to instantly observe the effects of the changes. Moreover, the 'console.log()' function played a crucial role in confirming the proper invocation of my functions and ensuring accurate information display.
 
 I tested the quizzes functionality by 'playing' it myself, to ensure the user experience was positive and that everything was working as it should. 
 
 **Counting Error**
 On all devices, when the user was playing the quiz it wasn't counting the 'Correct' and 'Incorrect' scores correctly, therefore I made sure my JavaScript function was calling the correct functions in order to carry this out accurately.
 
+### Improvements
+
+**'Lets begin!' button**
+After attempting various approaches, I endeavored to make the 'Let's begin!' button identical to the 'Next' and 'Play again!' buttons in both the HTML and CSS codes. This bug surfaced toward the project's conclusion, prompting me to prioritise the correction of other code issues in my work.
+
+**Decoration on Main title**
+While incorporating the code to link the name 'Snap Matches,' an unintended underline decoration emerged. Despite multiple attempts to address the bug, I decided to prioritise enhancements to other sections of my code. I aim to avoid a similar occurrence in my next project.
+
+**Hover effect on buttons**
+While constructing my website and configuring the buttons to align with my intentions, I recognised that as a user, I would have found the experience more interactive with hover buttons. Although I didn't implement this feature in the current website, I plan to integrate it into my next project.
+
+**Highscore and Timer**
+
+I had intended to include a high score and a timer feature in my project. Before starting the website construction, I set the goal of ensuring a functional '.js' script webpage. Throughout the building process, I prioritised refining and perfecting my JavaScript file.
 
 ### Validation: HTML, CSS and JavaScript
 Furthermore, I used Jshint to ensure that there were no errors within any of my JavaScript code. Initially there were errors as you can see below:
-![](assets/readme-files/validators/jshint-errors.png)
+![] --------------------------------------jshint 
 
 However, I implemented all changes to ensure my code passed with no errors:
 ![](assets/readme-files/validators/gamejs.png)
@@ -211,13 +216,11 @@ However, I implemented all changes to ensure my code passed with no errors:
 ![](assets/readme-files/validators/highscoresjs.png)
 
 In addition to Jshint, I used Jigsaw to validate my HTML and CSS which pass with no errors:
-![](assets/readme-files/validators/index.png)
-![](assets/readme-files/validators/quiz.png)
-![](assets/readme-files/validators/highscores.png)
-![](assets/readme-files/validators/end.png)
-![](assets/readme-files/validators/jigsaw-validated.png)
+![](assets/read.me-files/validators/index-validation.png)
+![](assets/read.me-files/validators/css-validation.png)
+![](assets/read.me-files/validators/quiz-validation.png)
 
-In addition to testing that I conducted, I got my friends, family & fellow students to test the website on their phones/laptops/tablets/desktops and provide feedback on anything they felt didn't work or look right, this enabled me to debug any issues that I might not have otherwise found.
+In addition to my own testing, I enlisted the help of friends, family, and fellow students to evaluate the website on various devices such as phones, laptops, tablets, and desktops. Their feedback on any issues or discrepancies in functionality and appearance proved invaluable, allowing me to identify and debug issues that I might not have discovered otherwise.
 
 ---
 ## Deployment
@@ -279,7 +282,7 @@ The below sources were used for content:
 ---
 ## Acknowledgements
 
-I would like to thank my course mentor Sandeep Aggarwal for his support and guidance throughout the course of the project and my fellow friends from CI Community Harry Dhillon and Helen Murugan for their support & feedback and examples of their completed submissions.
+I express gratitude to my course mentor, Sandeep Aggarwal, for his continuous support and guidance during the project. I also extend thanks to my friends from the CI Community, Harry Dhillon and Helen Murugan, for their assistance, feedback, and sharing examples of their completed submissions.
 
 ## Notes 
 
