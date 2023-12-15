@@ -201,19 +201,17 @@ While incorporating the code to link the name 'Snap Matches,' an unintended unde
 While constructing my website and configuring the buttons to align with my intentions, I recognised that as a user, I would have found the experience more interactive with hover buttons. Although I didn't implement this feature in the current website, I plan to integrate it into my next project.
 
 **Highscore and Timer**
-
 I had intended to include a high score and a timer feature in my project. Before starting the website construction, I set the goal of ensuring a functional '.js' script webpage. Throughout the building process, I prioritised refining and perfecting my JavaScript file.
+
+**Next button**
+I had intended to make this button centered below the incorrect and correct score. Unfortunately, it gave bugs that was unresolvable as I addressed it later on in my project. I intend to make sure the buttons used will be fully functioning with the right CSS to give it the look I intend to.
 
 ### Validation: HTML, CSS and JavaScript
 Furthermore, I used Jshint to ensure that there were no errors within any of my JavaScript code. Initially there were errors as you can see below:
 ![] --------------------------------------jshint 
 
 However, I implemented all changes to ensure my code passed with no errors:
-![](assets/readme-files/validators/gamejs.png)
-![](assets/readme-files/validators/titlejs.png)
-![](assets/readme-files/validators/gifjs.png)
-![](assets/readme-files/validators/endjs.png)
-![](assets/readme-files/validators/highscoresjs.png)
+![](assets/read.me-files/validators/js-hint-validation.png)
 
 In addition to Jshint, I used Jigsaw to validate my HTML and CSS which pass with no errors:
 ![](assets/read.me-files/validators/index-validation.png)

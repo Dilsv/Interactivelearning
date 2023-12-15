@@ -92,9 +92,9 @@ const questionBank = [
   {
       question: "Camera",
       answers: [
-          { text: "Photography", correct: true },
+          { text: "Photo", correct: true },
           { text: "Giraffe", correct: false },
-          { text: "Ice Cream", correct: false },
+          { text: "Yoghurt", correct: false },
           { text: "Sailboat", correct: false },
       ],
   },
@@ -275,4 +275,4 @@ if (document.getElementById("next-btn")) {
         .addEventListener("click", startGame);
 }
 
-})
+});
